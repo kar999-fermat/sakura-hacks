@@ -48,12 +48,6 @@ header {
     text-decoration: none;
 }
 
-.logo-svg {
-    width: 36px;
-    height: 36px;
-    fill: var(--deep-blossom);
-}
-
 .logo-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -119,7 +113,6 @@ nav a:hover, nav li.active-tab a {
     padding: 60px 20px 40px 20px;
 }
 
-/* Competition Announcement Tag */
 .status-tag {
     display: inline-flex;
     align-items: center;
@@ -175,7 +168,7 @@ nav a:hover, nav li.active-tab a {
     font-size: 1.3rem;
 }
 
-/* Timelines & FAQ Accordions */
+/* Accordion Engine Styling */
 .schedule-section, .faq-section {
     margin-top: 60px;
 }
@@ -265,7 +258,7 @@ nav a:hover, nav li.active-tab a {
     transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
 }
 
-/* About Us Page Specifics */
+/* Unified Profile Card Frames */
 .founders-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -282,20 +275,36 @@ nav a:hover, nav li.active-tab a {
     padding: 40px 30px;
 }
 
-.avatar-placeholder {
+.avatar-frame {
     width: 140px;
     height: 140px;
     border-radius: 50%;
     background-color: #ffeef1;
     border: 4px solid var(--sakura-pink);
     margin: 0 auto 25px auto;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.avatar-fallback {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     color: var(--deep-blossom);
     font-weight: 700;
+    z-index: 1;
 }
 
 .founder-title {
@@ -308,7 +317,7 @@ nav a:hover, nav li.active-tab a {
     margin-bottom: 15px;
 }
 
-/* Footer */
+/* Footer Container */
 footer {
     text-align: center;
     padding: 40px 20px;
