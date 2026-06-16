@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // FAQ Accordion Mechanics
     const accordionHeaders = document.querySelectorAll('.accordion-header');
     
     accordionHeaders.forEach(header => {
