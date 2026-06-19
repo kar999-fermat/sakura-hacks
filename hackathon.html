@@ -6,69 +6,68 @@
     <title>Sakura Hacks | Our Hackathon</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <header>
-        <a href="index.html" class="logo-container">
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
             <img src="images/logo.png" alt="Sakura Hacks Logo" style="width: 36px; height: 36px; object-fit: contain;">
             <span class="logo-text">Sakura Hacks</span>
         </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="active-tab"><a href="hackathon.html">Our Hackathon</a></li>
+                <li class="active"><a href="hackathon.html">Our Hackathon</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="https://forms.google.com" target="_blank" class="cta-btn">Register</a></li>
+                <li><a href="https://forms.google.com" target="_blank" class="btn">Register</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <section style="text-align: center; padding: 20px 0;">
-            <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 15px;">The Hackathon Experience</h1>
-            <p style="max-width: 650px; margin: 0 auto; font-size: 1.15rem; color: rgba(42, 52, 65, 0.85);">
-                A fast-paced sprint where your ideas turn into community software solutions. Pick the track that fits your skill level best.
-            </p>
+        <section class="hero" style="padding-bottom: 10px;">
+            <h1 style="font-size: 2.5rem;">The Hackathon Experience</h1>
+            <p>A fast-paced sprint where your ideas turn into community software solutions. Pick the track that fits your skill level best.</p>
         </section>
 
-        <section class="info-grid" style="margin-top: 30px;">
-            <div class="info-card">
+        <section class="grid">
+            <div class="card">
                 <h3>Explorers Track</h3>
                 <p>Designed for 6th-8th graders exploring code for the first time. Teams build interactive games or tools using <b>Scratch block environments</b>.</p>
             </div>
-            <div class="info-card">
+            <div class="card">
                 <h3>Pioneers Track</h3>
                 <p>Designed for students with minor experience in text-based languages. Build clean web apps running <b>Python, HTML/CSS, or Java compilers</b>.</p>
             </div>
         </section>
 
-        <section class="schedule-section">
-            <h2 class="section-title">The Friday Timeline</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="time">03:30 PM</span>
-                    <span><b>Arrival &amp; Fuel Up:</b> Check in at the Library Media Center desk, find your team table, and grab complimentary pizza slices and drinks.</span>
+        <section class="panel-section">
+            <h2 class="title">The Friday Timeline</h2>
+            <div class="list-wrapper">
+                <div class="list-row">
+                    <div class="meta-side">03:30 PM</div>
+                    <div><b>Arrival &amp; Fuel Up:</b> Check in at the Library Media Center desk, find your team table, and grab complimentary pizza slices and drinks.</div>
                 </div>
-                <div class="timeline-item">
-                    <span class="time">03:45 PM</span>
-                    <span><b>Opening Ceremony:</b> Introduction of the mentor staff, rules review, and reveal of the challenge details.</span>
+                <div class="list-row">
+                    <div class="meta-side">03:45 PM</div>
+                    <div><b>Opening Ceremony:</b> Introduction of the mentor staff, rules review, and reveal of the challenge details.</div>
                 </div>
-                <div class="timeline-item">
-                    <span class="time">04:00 PM</span>
-                    <span><b>Hacking Sprint:</b> Brainstorming ideas, confirming environments, and executing core software engineering.</span>
+                <div class="list-row">
+                    <div class="meta-side">04:00 PM</div>
+                    <div><b>Hacking Sprint:</b> Brainstorming ideas, confirming environments, and executing core software engineering.</div>
                 </div>
-                <div class="timeline-item">
-                    <span class="time">06:15 PM</span>
-                    <span><b>Code Freeze:</b> Hand tools down. All project modifications stop, and teams display completed screens.</span>
+                <div class="list-row">
+                    <div class="meta-side">06:15 PM</div>
+                    <div><b>Code Freeze:</b> Hand tools down. All project modifications stop, and teams display completed screens.</div>
                 </div>
-                <div class="timeline-item">
-                    <span class="time">06:20 PM</span>
-                    <span><b>Exhibition Judging:</b> Judges circulate the space. Teams deliver live project feature demonstrations.</span>
+                <div class="list-row">
+                    <div class="meta-side">06:20 PM</div>
+                    <div><b>Exhibition Judging:</b> Judges circulate the space. Teams deliver live project feature demonstrations.</div>
                 </div>
-                <div class="timeline-item">
-                    <span class="time">06:45 PM</span>
-                    <span><b>Closing Ceremony:</b> Distribution of rank certificates and top-tier technical gear/gift card prizes.</span>
+                <div class="list-row">
+                    <div class="meta-side">06:45 PM</div>
+                    <div><b>Closing Ceremony:</b> Distribution of rank certificates and top-tier technical gear/gift card prizes.</div>
                 </div>
             </div>
         </section>
