@@ -341,14 +341,14 @@ body::before, body::after {
 
 body::before {
     left: 20%;
-    animation-duration: 12s;
+    animation-duration: 10s;
     opacity: 0.8;
 }
 
 body::after {
     left: 70%;
-    animation-duration: 16s;
-    animation-delay: 4s;
+    animation-duration: 10s;
+    animation-delay: 0.4s;
     opacity: 0.6;
     font-size: 1.2rem;
 }
@@ -362,8 +362,8 @@ html::before {
     user-select: none;
     pointer-events: none;
     font-size: 1.4rem;
-    animation: fall 14s linear infinite;
-    animation-delay: 8s;
+    animation: fall 10s linear infinite;
+    animation-delay: 0.8s;
     opacity: 0.7;
 }
 
