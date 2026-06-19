@@ -11,69 +11,64 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo-container">
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
             <img src="images/logo.png" alt="Sakura Hacks Logo" style="width: 36px; height: 36px; object-fit: contain;">
             <span class="logo-text">Sakura Hacks</span>
         </a>
         <nav>
             <ul>
-                <li class="active-tab"><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="hackathon.html">Our Hackathon</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="https://forms.google.com" target="_blank" class="cta-btn">Register</a></li>
+                <li><a href="https://forms.google.com" target="_blank" class="btn">Register</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
         <section class="hero">
-            <div class="status-tag">Next Competition: Opening School Year</div>
-            <h1 class="six-letter-desc">Youth Hackathon!</h1>
+            <div class="badge">Next Competition: Opening School Year</div>
+            <h1>Youth Hackathon!</h1>
             <p>Naperville's premier student-led hackathon introducing middle school students to code.</p>
-            <a href="hackathon.html" class="cta-btn" style="font-size: 1.1rem; padding: 14px 36px;">Explore Event</a>
+            <br>
+            <a href="hackathon.html" class="btn" style="font-size: 1.1rem; padding: 12px 30px; display: inline-block;">Explore Event</a>
         </section>
 
-        <section class="info-grid">
-            <div class="info-card">
+        <section class="grid">
+            <div class="card">
                 <h3>Location</h3>
-                <p>
-                    Library Media Center<br>
-                    <b>Naperville Central High School</b><br>
-                    <span style="font-size: 0.95rem; opacity: 0.85;">440 Aurora Ave. Naperville, IL</span><br>
-                    <span style="display: inline-block; margin-top: 5px; color: var(--deep-blossom); font-weight: 600;">Enter through Door 8</span>
-                </p>
+                <p>Library Media Center<br><b>Naperville Central High School</b><br>440 Aurora Ave. Naperville, IL<br><span style="color: var(--accent); font-weight: 600; display: inline-block; margin-top: 5px;">Enter through Door 8</span></p>
             </div>
-            <div class="info-card">
+            <div class="card">
                 <h3>Date &amp; Time</h3>
                 <p>Opening School Year<br>Friday, 3:30 PM – 7:00 PM</p>
             </div>
-            <div class="info-card">
+            <div class="card">
                 <h3>Admission &amp; Food</h3>
                 <p>100% Free Entry<br>Pizza &amp; Drinks Included!</p>
             </div>
         </section>
 
-        <section class="faq-section">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            
-            <div class="accordion-item">
-                <button class="accordion-header" aria-expanded="false">Do I need prior coding experience?</button>
-                <div class="accordion-content">
-                    <p>Not at all! Our entry track is explicitly built for students who have never typed code before. You will use approachable block-based systems with high school mentors guiding you the entire time.</p>
+        <section class="panel-section">
+            <h2 class="title">Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="acc-item">
+                    <button class="acc-trigger">Do I need prior coding experience?</button>
+                    <div class="acc-panel">
+                        <p>Not at all! Our entry track is explicitly built for students who have never typed code before. You will use approachable block-based systems with high school mentors guiding you the entire time.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header" aria-expanded="false">What equipment do I need to bring?</button>
-                <div class="accordion-content">
-                    <p>Please bring your school-issued Chromebook or a personal laptop along with its power charger. Everything else, including technical templates, worksheets, and food, is fully covered.</p>
+                <div class="acc-item">
+                    <button class="acc-trigger">What equipment do I need to bring?</button>
+                    <div class="acc-panel">
+                        <p>Please bring your school-issued Chromebook or a personal laptop along with its power charger. Everything else, including technical templates, worksheets, and food, is fully covered.</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header" aria-expanded="false">Is this an officially supervised event?</button>
-                <div class="accordion-content">
-                    <p>Yes. The hackathon takes place entirely on campus within the library and is supervised directly by an official NCHS faculty sponsor alongside background-vetted high school leadership mentors.</p>
+                <div class="acc-item">
+                    <button class="acc-trigger">Is this an officially supervised event?</button>
+                    <div class="acc-panel">
+                        <p>Yes. The hackathon takes place entirely on campus within the library and is supervised directly by an official NCHS faculty sponsor alongside background-vetted high school leadership mentors.</p>
+                    </div>
                 </div>
             </div>
         </section>
