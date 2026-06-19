@@ -6,11 +6,12 @@
     <title>Sakura Hacks | About Us</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <header>
-        <a href="index.html" class="logo-container">
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
             <img src="images/logo.png" alt="Sakura Hacks Logo" style="width: 36px; height: 36px; object-fit: contain;">
             <span class="logo-text">Sakura Hacks</span>
         </a>
@@ -18,81 +19,63 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="hackathon.html">Our Hackathon</a></li>
-                <li class="active-tab"><a href="about.html">About Us</a></li>
-                <li><a href="https://forms.google.com" target="_blank" class="cta-btn">Register</a></li>
+                <li class="active"><a href="about.html">About Us</a></li>
+                <li><a href="https://forms.google.com" target="_blank" class="btn">Register</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <section style="text-align: center; padding: 20px 0 40px 0;">
-            <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 20px;">Who are we?</h1>
-            <p style="max-width: 750px; margin: 0 auto 30px auto; font-size: 1.15rem; line-height: 1.7; color: rgba(42, 52, 65, 0.85);">
-                Sakura Hacks is an organization of high schoolers with a love for computer science and technology. We are dedicated to sharing our passion with younger students by providing opportunities for learning, fun, and competition. We selected the name Sakura Hacks because cherry blossoms traditionally represent renewal, community growth, and fresh beginnings. Our mission is to establish a welcoming entry environment for middle schoolers.
-            </p>
-            <h3 style="font-family: 'Montserrat', sans-serif; color: var(--deep-blossom); font-size: 1.2rem; margin-bottom: 5px;">Locations</h3>
-            <p style="font-size: 1.05rem; color: rgba(42, 52, 65, 0.9);">Sakura Hacks is based in Naperville, Illinois.</p>
+        <section class="hero" style="padding-bottom: 20px;">
+            <h1 style="font-size: 2.5rem;">Who are we?</h1>
+            <p style="max-width: 750px; margin-bottom: 20px;">Sakura Hacks is an organization of high schoolers with a love for computer science and technology. We are dedicated to sharing our passion with younger students by providing opportunities for learning, fun, and competition. We selected the name Sakura Hacks because cherry blossoms traditionally represent renewal, community growth, and fresh beginnings. Our mission is to establish a welcoming entry environment for middle schoolers.</p>
+            <h3 style="font-family: 'Montserrat', sans-serif; color: var(--accent); font-size: 1.2rem;">Locations</h3>
+            <p>Sakura Hacks is based in Naperville, Illinois.</p>
         </section>
 
-        <section style="margin-top: 20px; border-top: 1px solid rgba(255, 183, 197, 0.2); padding-top: 50px;">
-            <h2 class="section-title">Our Team</h2>
-            <div class="founders-grid">
-                
-                <div class="founder-card">
-                    <div class="avatar-frame">
-                        <img src="images/ayush.jpg" onerror="this.style.display='none';" class="avatar-img" alt="Ayush Kar">
-                        <span class="avatar-fallback">A</span>
+        <section class="panel-section">
+            <h2 class="title">Our Team</h2>
+            <div class="cols-3">
+                <div class="profile-box">
+                    <div class="avatar">
+                        <img src="images/ayush.jpg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" alt="Ayush Kar">
+                        <span class="fallback" style="display: none;">A</span>
                     </div>
                     <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem;">Ayush Kar</h3>
-                    <div class="founder-title">Co-Founder and Co-President</div>
-                    <p style="font-size: 0.95rem; color: rgba(42, 52, 65, 0.9); margin-bottom: 12px;">
-                        Ayush is a junior at Naperville Central High School. He spends much of his time studying computer science. Aside from coding and working on an independent project, he loves math.
-                    </p>
-                    <div style="font-size: 0.9rem; font-weight: 600; color: var(--deep-blossom);">Favorite Topic: Recursion</div>
+                    <div style="font-weight: 600; color: #555; font-size: 0.9rem; margin-bottom: 10px;">Co-Founder and Co-President</div>
+                    <p style="font-size: 0.9rem;">Ayush is a junior at Naperville Central High School. He spends much of his time studying computer science. Aside from coding and working on an independent project, he loves math.</p>
+                    <span class="sub">Favorite Topic: Recursion</span>
                 </div>
-
-                <div class="founder-card">
-                    <div class="avatar-frame">
-                        <img src="images/connor.jpg" onerror="this.style.display='none';" class="avatar-img" alt="Connor">
-                        <span class="avatar-fallback">C</span>
+                
+                <div class="profile-box">
+                    <div class="avatar">
+                        <img src="images/connor.jpg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" alt="Connor">
+                        <span class="fallback" style="display: none;">C</span>
                     </div>
                     <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem;">Connor</h3>
-                    <div class="founder-title">Co-Founder and Co-President</div>
-                    <p style="font-size: 0.95rem; color: rgba(42, 52, 65, 0.9); margin-bottom: 12px;">
-                        Connor is a senior at Naperville Central High School. Description details forthcoming.
-                    </p>
-                    <div style="font-size: 0.9rem; font-weight: 600; color: var(--deep-blossom);">Favorite Topic: TBD</div>
+                    <div style="font-weight: 600; color: #555; font-size: 0.9rem; margin-bottom: 10px;">Co-Founder and Co-President</div>
+                    <p style="font-size: 0.9rem;">Connor is a senior at Naperville Central High School. Description details forthcoming.</p>
+                    <span class="sub">Favorite Topic: TBD</span>
                 </div>
-
             </div>
         </section>
 
-        <section style="margin-top: 60px; text-align: center;">
-            <h2 class="section-title">Group Photo</h2>
-            <div style="width: 100%; max-width: 800px; min-height: 400px; background-color: #ffeef1; border: 2px dashed var(--sakura-pink); border-radius: 16px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: var(--deep-blossom); font-weight: 600; overflow: hidden; position: relative;">
-                <img src="images/group.jpg" id="main-group-photo" onerror="this.style.display='none'; document.getElementById('photo-fallback-text').style.display='block';" style="width: 100%; height: auto; display: block;" alt="Sakura Hacks Team">
-                <span id="photo-fallback-text" style="display: none; padding: 20px;">Team Group Photo Container Location</span>
+        <section class="panel-section" style="text-align: center;">
+            <h2 class="title">Group Photo</h2>
+            <div style="width: 100%; max-width: 800px; min-height: 300px; background-color: #ffeef1; border: 2px dashed var(--bg-pink); border-radius: 12px; margin: 0 auto; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                <img src="images/group.jpg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" style="width: 100%; height: auto; display: block;" alt="Sakura Hacks Team">
+                <span style="display: none; color: var(--accent); font-weight: 600;">Team Group Photo Location</span>
             </div>
         </section>
 
-        <section style="margin-top: 60px; margin-bottom: 40px; border-top: 1px solid rgba(255, 183, 197, 0.2); padding-top: 50px; text-align: center;">
-            <h2 class="section-title">Sponsors</h2>
-            <p style="max-width: 700px; margin: 0 auto 35px auto; font-size: 1.1rem; line-height: 1.6; color: rgba(42, 52, 65, 0.9);">
-                This competition is hosted in partnership with Naperville Central High School. If you or your organization are interested in sponsoring our upcoming youth event, please contact the student leadership team.
-            </p>
+        <section class="panel-section" style="text-align: center; margin-bottom: 40px;">
+            <h2 class="title">Sponsors</h2>
+            <p style="max-width: 700px; margin: 0 auto 30px auto;">This competition is hosted in partnership with Naperville Central High School. If you or your organization are interested in sponsoring our upcoming youth event, please contact the student leadership team.</p>
             
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px; margin: 20px auto 50px auto; max-width: 800px;">
-                <div style="width: 180px; height: 90px; background-color: white; border: 1px dashed rgba(255, 183, 197, 0.4); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #a4b0be; font-size: 0.85rem; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.01);">
-                    Sponsor Space Placeholder
-                </div>
-            </div>
-
-            <div style="border-top: 1px solid rgba(255, 183, 197, 0.15); padding-top: 40px; margin-top: 40px;">
-                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; margin-bottom: 15px; color: var(--text-dark);">Join Our Team as a Volunteer</h3>
-                <p style="max-width: 600px; margin: 0 auto 25px auto; font-size: 1rem; color: rgba(42, 52, 65, 0.85);">
-                    High school students looking to mentor middle school tracks or assist with physical event logistics can sign up through our portal below.
-                </p>
-                <a href="https://forms.google.com" target="_blank" class="cta-btn" style="display: inline-block; font-size: 1rem; padding: 12px 30px;">Apply to Volunteer</a>
+            <div style="border-top: 1px solid rgba(255, 183, 197, 0.2); padding-top: 40px; margin-top: 40px;">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; margin-bottom: 15px;">Join Our Team as a Volunteer</h3>
+                <p style="max-width: 600px; margin: 0 auto 25px auto;">High school students looking to mentor middle school tracks or assist with physical event logistics can sign up through our portal below.</p>
+                <a href="https://forms.google.com" target="_blank" class="btn" style="display: inline-block;">Apply to Volunteer</a>
             </div>
         </section>
     </div>
