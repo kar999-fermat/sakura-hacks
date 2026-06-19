@@ -1,21 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // FAQ Accordion Mechanics
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    const triggers = document.querySelectorAll('.acc-trigger');
     
-    accordionHeaders.forEach(header => {
-        header.addEventListener('click', () => {
-            const currentItem = header.parentElement;
-            const isOpen = currentItem.classList.contains('active');
+    triggers.forEach(button => {
+        button.addEventListener('click', () => {
+            const item = button.parentElement;
+            const isOpen = item.classList.contains('open');
             
-            document.querySelectorAll('.accordion-item').forEach(item => {
-                item.classList.remove('active');
-                const btn = item.querySelector('.accordion-header');
-                if (btn) btn.setAttribute('aria-expanded', 'false');
+            document.querySelectorAll('.acc-item').forEach(i => {
+                i.classList.remove('open');
             });
             
             if (!isOpen) {
-                currentItem.classList.add('active');
-                header.setAttribute('aria-expanded', 'true');
+                item.classList.add('open');
             }
         });
     });
